@@ -1,5 +1,6 @@
+<meta charset="utf-8" />
 <title>Guy Maman</title>
-<meta name="description" content="Portfolio of Guy Maman — Operations & Project Manager, ex-Captain (IDF Sayeret Nahal), and Co-Founder of Mishtaken Hacham." />
+<meta name="description" content="Portfolio of Guy Maman — Business Operations, Projects, Product &amp; Growth. Co-Founder of Mishtaken Hacham and Captain (Res.), IDF. Tel Aviv, Israel." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -142,7 +143,7 @@
   .hero-divider { width: 46px; height: 3px; background: var(--accent); border-radius: 2px; margin: 0 auto 22px; opacity: 0; animation: fadeUp 0.7s 0.58s var(--ease) forwards; }
   .hero-role {
     font-size: clamp(14px, 1.6vw, 17px); font-weight: 500; color: rgba(243,237,226,0.62); letter-spacing: 0.02em;
-    margin-bottom: 12px; opacity: 0; animation: fadeUp 0.8s 0.68s var(--ease) forwards;
+    max-width: 72ch; margin: 0 auto 12px; text-wrap: balance; opacity: 0; animation: fadeUp 0.8s 0.68s var(--ease) forwards;
   }
   .hero-location {
     font-size: 13px; color: rgba(243,237,226,0.38); letter-spacing: 0.05em; margin-bottom: 42px;
@@ -240,16 +241,18 @@
     background: radial-gradient(ellipse, rgba(255,255,255,0.10) 0%, transparent 70%);
   }
   .project-brandmark { position: relative; z-index: 1; text-align: center; color: #fff; padding: 32px; }
-  .project-brandmark .he { font-family: 'Space Grotesk', sans-serif; font-size: clamp(34px, 4.6vw, 50px); font-weight: 700; letter-spacing: -0.01em; margin-bottom: 10px; }
-  .project-brandmark .en { font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 22px; }
-  .project-brandmark .tag {
-    font-family: 'Inter', sans-serif; font-size: 14.5px; color: rgba(255,255,255,0.82);
-    border-top: 1px solid rgba(255,255,255,0.18); padding-top: 18px; max-width: 320px; margin: 0 auto; line-height: 1.65;
-  }
+  .project-logo { width: min(340px, 100%); margin: 0 auto 20px; padding: clamp(20px, 3vw, 30px); background: #fff; border-radius: var(--radius); box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28); }
+  .project-logo img { width: 100%; height: auto; }
+  .project-brandmark .en { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
   .project-body { padding: 48px 44px 48px 4px; }
   .project-eyebrow { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
-  .project-title { font-size: clamp(22px, 2.8vw, 30px); margin-bottom: 16px; }
+  .project-title { font-size: clamp(22px, 2.8vw, 30px); margin-bottom: 8px; }
+  .project-subtitle { font-size: 15px; font-weight: 600; color: var(--text-dark); margin-bottom: 14px; }
   .project-desc { font-size: 15px; line-height: 1.8; color: var(--text-medium); margin-bottom: 22px; }
+  .project-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 26px; }
+  .project-metric { padding: 14px 12px; background: var(--bg-warm); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+  .project-metric-value { display: block; font-family: 'Space Grotesk', sans-serif; font-size: clamp(18px, 1.9vw, 22px); font-weight: 700; letter-spacing: -0.01em; color: var(--accent); margin-bottom: 3px; white-space: nowrap; }
+  .project-metric-label { display: block; font-size: 12px; line-height: 1.4; color: var(--text-medium); }
   .project-points { display: flex; flex-direction: column; gap: 12px; margin-bottom: 26px; }
   .project-point { display: flex; gap: 12px; align-items: flex-start; }
   .project-point-icon {
@@ -321,6 +324,7 @@
     .tl-dot { width: 11px; height: 11px; }
     .contact-grid { grid-template-columns: 1fr; }
     .hero-actions { flex-direction: column; align-items: center; }
+    .project-metrics { grid-template-columns: repeat(2, 1fr); }
   }
 
   .icon { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.14em; flex-shrink: 0; }
@@ -355,8 +359,9 @@
     <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
     <symbol id="i-table" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></symbol>
     <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
-    <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/><ellipse cx="12" cy="12" rx="10" ry="4.2"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)"/></symbol>
-    <symbol id="i-hexagon" viewBox="0 0 24 24"><path d="M12 2 21 7v10l-9 5-9-5V7z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
     <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H6a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 16 8.5a4.5 4.5 0 0 1 1.5 8.75z"/></symbol>
     <symbol id="i-bars" viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/><line x1="3" y1="21" x2="21" y2="21"/></symbol>
   </defs>
@@ -392,13 +397,13 @@
 <section id="hero" class="hero">
   <div class="hero-watermark" aria-hidden="true">GM</div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Real Estate Operations &amp; Project Manager</p>
+    <p class="hero-eyebrow">Business Operations | Projects | Product &amp; Growth</p>
     <h1 class="hero-name">
       <span class="hero-first">Guy</span>
       <span class="hero-last">Maman</span>
     </h1>
     <span class="hero-divider" aria-hidden="true"></span>
-    <p class="hero-role">Urban Renewal &amp; Construction Projects · Captain (Res.), IDF Sayeret Nahal</p>
+    <p class="hero-role">Operations &amp; Project Management | Digital Product Co-Founder | Captain (Res.), IDF</p>
     <p class="hero-location"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Tel Aviv, Israel</p>
     <div class="hero-actions">
       <a href="https://www.linkedin.com/in/guymaman/" target="_blank" rel="noopener noreferrer" class="btn-pill">
@@ -436,10 +441,13 @@
       <div class="about-body">
         <h3 class="about-heading">Hi, I'm Guy</h3>
         <p class="about-text">
-          Operations-oriented manager with hands-on experience leading complex, multi-stakeholder real estate and urban renewal projects in high-pressure environments — from planning through execution and delivery. My background spans execution, process management, cross-functional coordination, and problem solving.
+          I bring structure to complex, multi-stakeholder work. Since 2021, I've managed day-to-day project coordination and progress tracking across 11 complex real-estate development projects valued at over NIS 1 billion, working with engineers, architects, lawyers, contractors, developers, municipalities, and senior leadership. My job is to keep everyone aligned, solve problems as they come up, and keep things moving forward.
         </p>
         <p class="about-text">
-          I bring a founder-mindset approach: ownership, adaptability, and fast learning, with the ability to turn ambiguity into structured action. That mindset was built over five years of military leadership and sharpened running large-scale urban renewal projects. Alongside that, my studies in Business Administration and Information Systems, together with co-building a real-estate-tech product, gave me a practical understanding of how technology projects actually get planned and delivered.
+          Alongside that, I co-founded Mishtaken Hacham, a digital platform we built from scratch for Israeli housing-lottery participants. It's where my interest in technology, AI tools, business operations, and digital products turned into hands-on practice.
+        </p>
+        <p class="about-text">
+          I hold a B.A. in Business Administration with a specialization in Information Systems. As a Captain (Res.) in the IDF, I learned to lead, make decisions, and take responsibility under pressure. Today I'm looking to bring that mix of structure, ownership, and problem-solving to the Israeli tech and startup ecosystem.
         </p>
         <div class="about-contacts">
           <div class="about-contact-item">
@@ -473,16 +481,16 @@
         <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
         <div class="tl-card">
           <div class="tl-top">
-            <h3 class="tl-role">Operations / Project Manager — Urban Renewal</h3>
+            <h3 class="tl-role">Operations &amp; Project Coordination — Real Estate Development</h3>
             <span class="tl-dates">2021 – Present</span>
           </div>
           <p class="tl-org"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg>Ken Hator Engineering &amp; Construction</p>
           <ul class="tl-bullets">
-            <li>Led end-to-end operations of ~11 large-scale urban renewal projects with a total value exceeding ₪1B, from planning through execution and delivery</li>
-            <li>Built and managed operational plans, timelines, budgets, and cross-team workflows</li>
-            <li>Coordinated daily execution between engineering, legal, contractors, developers, and municipalities</li>
-            <li>Owned schedules, dependencies, and operational risk management; identified bottlenecks and resolved execution issues</li>
-            <li>Served as the central point of coordination across multiple stakeholders and interfaces, reporting status and progress to senior management</li>
+            <li>Managed day-to-day project coordination and progress tracking across 11 complex projects with a total value exceeding NIS 1B</li>
+            <li>Coordinated architects, engineers, legal teams, contractors, developers, and municipalities</li>
+            <li>Tracked timelines, dependencies, issues, and project milestones</li>
+            <li>Identified bottlenecks, followed up on outstanding tasks, and escalated critical issues</li>
+            <li>Prepared progress updates and coordinated with senior management</li>
           </ul>
         </div>
       </div>
@@ -490,15 +498,14 @@
         <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
         <div class="tl-card">
           <div class="tl-top">
-            <h3 class="tl-role">Captain — Deputy Company Commander</h3>
+            <h3 class="tl-role">Captain (Res.) | Deputy Company Commander</h3>
             <span class="tl-dates">2016 – 2021</span>
           </div>
           <p class="tl-org"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>IDF Nahal Reconnaissance Unit (Sayeret Nahal)</p>
           <ul class="tl-bullets">
-            <li>Planned and executed complex operations under time pressure and uncertainty</li>
-            <li>Led teams in dynamic, high-stakes environments requiring rapid decision-making</li>
-            <li>Managed logistics, safety, and coordination across multiple operational interfaces</li>
-            <li>Trained and mentored commanders and soldiers, ensuring execution quality and discipline</li>
+            <li>Led commanders and soldiers, making fast decisions under pressure and uncertainty</li>
+            <li>Planned and coordinated complex operations across multiple teams and interfaces</li>
+            <li>Solved problems in real time and took full responsibility for outcomes</li>
           </ul>
           <div class="tl-badge">
             <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
@@ -520,48 +527,44 @@
     </div>
     <div class="skills-wrapper">
       <div class="skills-group fade-up">
-        <h3 class="skills-group-name">Operations &amp; Execution</h3>
+        <h3 class="skills-group-name">Business Operations</h3>
         <div class="skills-grid">
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg><span>Operations &amp; Execution</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-git-branch"/></svg><span>Project Planning &amp; Execution</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg><span>Process Building &amp; Optimization</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span>Schedule &amp; Budget Management</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><span>Risk &amp; Issue Management</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-git-branch"/></svg><span>Project Coordination &amp; Tracking</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg><span>Process Improvement</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg><span>Stakeholder Management</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg><span>Cross-Functional Collaboration</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-bulb"/></svg><span>Problem Solving</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-bars"/></svg><span>Reporting &amp; Analysis</span></div>
         </div>
       </div>
       <div class="skills-group fade-up">
-        <h3 class="skills-group-name">Leadership &amp; People</h3>
+        <h3 class="skills-group-name">Product &amp; Technology</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg><span>Digital Product Development</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg><span>AI Tools &amp; Workflows</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg><span>AI-Assisted Prototyping</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg><span>Automation</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg><span>CRM &amp; Salesforce</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-table"/></svg><span>Excel &amp; Power BI</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg><span>SQL — Basic</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>HTML / CSS / JavaScript — Basic</span></div>
+        </div>
+      </div>
+      <div class="skills-group fade-up">
+        <h3 class="skills-group-name">Leadership</h3>
         <div class="skills-grid">
           <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-flag"/></svg><span>Ownership &amp; Accountability</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg><span>Working Directly with Leadership</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg><span>Team Leadership &amp; Mentoring</span></div>
-        </div>
-      </div>
-      <div class="skills-group fade-up">
-        <h3 class="skills-group-name">Coordination &amp; Communication</h3>
-        <div class="skills-grid">
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg><span>Cross-Functional Coordination</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg><span>Stakeholder Management</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg><span>Stakeholder Communication</span></div>
-        </div>
-      </div>
-      <div class="skills-group fade-up">
-        <h3 class="skills-group-name">Tools &amp; Technology</h3>
-        <div class="skills-grid">
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-table"/></svg><span>Excel</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg><span>SQL</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>JavaScript</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-atom"/></svg><span>React</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-hexagon"/></svg><span>Node.js</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg><span>Salesforce</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-bars"/></svg><span>BI Tools</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg><span>Team Leadership</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span>Prioritization</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg><span>Communication</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><span>Working Under Pressure</span></div>
         </div>
       </div>
       <div class="skills-group fade-up">
         <h3 class="skills-group-name">Languages</h3>
         <div class="skills-grid">
           <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><span>Hebrew — Native</span></div>
-          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><span>English — Working Proficiency</span></div>
+          <div class="skill-card"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><span>English — Advanced</span></div>
         </div>
       </div>
     </div>
@@ -579,39 +582,55 @@
     <div class="project-spotlight fade-up">
       <div class="project-visual">
         <div class="project-brandmark">
-          <div class="he" dir="rtl" lang="he">משתכן חכם</div>
-          <div class="en">Smart Tenant</div>
-          <div class="tag">A real-estate platform for Israeli housing-lottery winners</div>
+          <div class="project-logo">
+            <img src="assets/mishtaken-hacham-logo.webp" width="643" height="455" alt="משתכן חכם (Mishtaken Hacham) logo" loading="lazy" decoding="async" />
+          </div>
+          <div class="en">mishtaken-hacham.co.il</div>
         </div>
       </div>
       <div class="project-body">
-        <p class="project-eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>Independent Project · Co-Founder</p>
-        <h3 class="project-title">Mishtaken Hacham</h3>
+        <p class="project-eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-bulb"/></svg>Co-Founder | Product &amp; Operations | 2026</p>
+        <h3 class="project-title"><span dir="rtl" lang="he">משתכן חכם</span> | Mishtaken Hacham</h3>
+        <p class="project-subtitle">Digital Platform for Israeli Housing Lottery Participants</p>
         <p class="project-desc">
-          Alongside my real estate operations work, I co-founded and helped build a platform that guides Israeli housing-lottery winners through the subsidized-housing process — from winning through apartment selection, contract signing, construction, and key handover. It turns fragmented information into a clear, structured path: an eligibility calculator, a lottery comparison table, and step-by-step guides.
+          Co-founded and built a digital platform from scratch to help Israeli housing-lottery participants navigate complex housing decisions through accessible information, calculators, guides, and practical tools.
         </p>
+        <div class="project-metrics">
+          <div class="project-metric"><span class="project-metric-value">3,000+</span><span class="project-metric-label">Registered users</span></div>
+          <div class="project-metric"><span class="project-metric-value">30,000+</span><span class="project-metric-label">Website visits</span></div>
+          <div class="project-metric"><span class="project-metric-value">0 → 1</span><span class="project-metric-label">Built from scratch</span></div>
+          <div class="project-metric"><span class="project-metric-value">Organic</span><span class="project-metric-label">Growth without paid advertising</span></div>
+        </div>
         <div class="project-points">
           <div class="project-point">
-            <div class="project-point-icon"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></div>
-            <div class="project-point-text"><b>Real estate domain</b> — applied my background in housing and urban renewal to define the problem and the guidance winners actually need</div>
+            <div class="project-point-icon"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></div>
+            <div class="project-point-text"><b>Product concept</b> — identified user needs and defined the product concept</div>
           </div>
           <div class="project-point">
-            <div class="project-point-icon"><svg class="icon" aria-hidden="true"><use href="#i-bulb"/></svg></div>
-            <div class="project-point-text"><b>Product &amp; operations</b> — shaped the roadmap, built the content and workflow behind it, and worked directly with users to understand their journey</div>
+            <div class="project-point-icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></div>
+            <div class="project-point-text"><b>Functionality &amp; UX</b> — helped shape product functionality and the user experience</div>
           </div>
           <div class="project-point">
-            <div class="project-point-icon"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></div>
-            <div class="project-point-text"><b>Technical understanding</b> — worked closely with developers on the platform's data and features, deepening my hands-on understanding of how technology projects get built</div>
+            <div class="project-point-icon"><svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg></div>
+            <div class="project-point-text"><b>Content &amp; operations</b> — worked on content, operational workflows, and user engagement</div>
+          </div>
+          <div class="project-point">
+            <div class="project-point-icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg></div>
+            <div class="project-point-text"><b>AI &amp; digital tools</b> — used AI and digital tools to support product development and operations</div>
+          </div>
+          <div class="project-point">
+            <div class="project-point-icon"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg></div>
+            <div class="project-point-text"><b>Partners &amp; users</b> — coordinated services and communication with users and professional partners</div>
           </div>
         </div>
         <div class="project-foot">
           <div class="project-tags">
-            <span class="project-tag">Real Estate</span>
             <span class="project-tag">Product</span>
-            <span class="project-tag">Data</span>
+            <span class="project-tag">Operations</span>
+            <span class="project-tag">Growth</span>
           </div>
           <a class="project-link" href="https://mishtaken-hacham.co.il/" target="_blank" rel="noopener noreferrer">
-            Visit the live site <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+            Visit Live Site <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
           </a>
         </div>
       </div>
@@ -632,10 +651,10 @@
       <div class="edu-body">
         <div class="edu-top">
           <h3 class="edu-institution">Ono Academic College</h3>
-          <span class="edu-status">In Progress</span>
+          <span class="edu-status">Completed</span>
         </div>
         <p class="edu-degree">B.A. in Business Administration, Information Systems</p>
-        <p class="edu-dates"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>2023 – Present</p>
+        <p class="edu-dates"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>2022 – 2026</p>
       </div>
     </div>
   </div>
@@ -649,7 +668,7 @@
       <h2 class="section-title">Contact</h2>
       <div class="section-line"></div>
     </div>
-    <p class="contact-intro fade-up">Open to conversations about operations, execution, and the next thing worth building.</p>
+    <p class="contact-intro fade-up">Open to opportunities in business operations, project management, product operations, and early-stage startups.</p>
     <div class="contact-grid">
       <a href="mailto:guymaman127@gmail.com" class="contact-card fade-up">
         <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
